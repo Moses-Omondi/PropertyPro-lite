@@ -59,11 +59,10 @@ h2{
 }
 
 #login input[type = "submit"]{
-   padding: 4px;
+   padding: 5px;
    color: white;
    background-color: purple;
    border-radius: 5px;
-   border-radius: 15px;
 }
 
 .container input[type = "text"], .container input[type = "text"], .container input[type = "password"]{
@@ -75,11 +74,9 @@ h2{
 
 .container input[type = "submit"]{
     margin-top: 2px;
-    padding: 4px;
+    padding: 7px;
     color: white;
     background-color: purple;
-    border-radius: 15px;
-    box-shadow: 20px;
  }
 
 
