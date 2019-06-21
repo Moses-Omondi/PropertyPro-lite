@@ -33,6 +33,7 @@ h1{
     margin-bottom: 40px;
 }
 
+.search-prop,
 #signup{
     position: absolute;
     font-size: 30px;
@@ -45,6 +46,7 @@ h2{
     color: purple;
 }
 
+
 #login{
     position: absolute;
     font-size: 25px;
@@ -52,12 +54,14 @@ h2{
     margin-left: 31.5%;    
 }
 
+
 #login input[type = "text"], #login input[type = "password"]{
     background: none;
     border: 2px solid purple;
     padding: 3px;
 }
 
+.search-prop input[type = "submit"],
 #login input[type = "submit"]{
    padding: 5px;
    color: white;
@@ -79,4 +83,72 @@ h2{
     background-color: purple;
  }
 
+ .post-header{
+    position: absolute;
+    margin-left: 35%;
+ }
 
+ .post-home,
+ .post-delete
+ .post-update,
+ .post-edit,
+ .post-image{
+     position: relative;
+     size: 60px;
+     height: 20px;
+ }
+
+ .home,
+ .delete,
+ .update,
+ .edit,
+ .upload{
+     border: 2px solid gray;
+     color: white;
+     background-color: purple;
+     padding: 15px 30px;
+     font-size: 20px;
+ }
+ .post-image input[type = file]{
+     font-size: 100px;
+     position: absolute;
+     left: 0;
+     top: 0;
+     opacity: 0;
+ }
+
+ .post-image{
+     position: absolute;
+     top: 15%;
+     left: 25%;
+ }
+
+ .post-edit{
+    position: absolute;
+    top: 15%;
+    left: 35%;
+}
+
+.post-home{
+    position: absolute;
+    top: 15%;
+    left: 46%;
+}
+
+.post-update{
+     position: absolute;
+     top: 15%;
+     left: 55%;
+ }
+
+ .post-delete{
+    position: absolute;
+    top: 15%;
+    left: 65%;
+}
+ 
+.search-prop{
+    top: 22%;
+    left: -5%;
+    padding: 15px 30px;
+}
