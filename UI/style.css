@@ -63,13 +63,13 @@ h2{
 
 .search-prop input[type = "submit"],
 #login input[type = "submit"]{
-   padding: 5px;
+   padding: 4px 22px;
    color: white;
    background-color: purple;
    border-radius: 5px;
 }
 
-.search-prop input[type = "number"],
+.search-prop input[type = "text"],
 .container input[type = "text"], .container input[type = "text"], .container input[type = "password"]{
     background: none;
     border: 2px solid purple;
