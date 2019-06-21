@@ -69,10 +69,11 @@ h2{
    border-radius: 5px;
 }
 
+.search-prop input[type = "number"],
 .container input[type = "text"], .container input[type = "text"], .container input[type = "password"]{
     background: none;
     border: 2px solid purple;
-    padding: 5px;
+    padding: 2px;
     margin: 5px;
 }
 
@@ -83,11 +84,14 @@ h2{
     background-color: purple;
  }
 
- .post-header{
+ .post-header h1{
     position: absolute;
-    margin-left: 35%;
+    top: 2%;
+    margin-left: 30%;
+    font-size: 75px;
  }
 
+ .post-sold,
  .post-home,
  .post-delete
  .post-update,
@@ -98,15 +102,15 @@ h2{
      height: 20px;
  }
 
+ .sold,
  .home,
  .delete,
  .update,
  .edit,
  .upload{
-     border: 2px solid gray;
      color: white;
      background-color: purple;
-     padding: 15px 30px;
+     padding: 5px 20px;
      font-size: 20px;
  }
  .post-image input[type = file]{
@@ -120,35 +124,40 @@ h2{
  .post-image{
      position: absolute;
      top: 15%;
-     left: 25%;
+     left: 22%;
  }
 
  .post-edit{
     position: absolute;
     top: 15%;
-    left: 35%;
+    left: 32%;
 }
 
 .post-home{
     position: absolute;
     top: 15%;
-    left: 46%;
+    left: 42%;
 }
 
 .post-update{
      position: absolute;
      top: 15%;
-     left: 55%;
+     left: 50.5%;
  }
 
  .post-delete{
     position: absolute;
     top: 15%;
-    left: 65%;
+    left: 61%;
 }
  
+.post-sold{
+    position: absolute;
+    top: 15%;
+    left: 71%;
+}
+
 .search-prop{
     top: 22%;
     left: -5%;
-    padding: 15px 30px;
 }
