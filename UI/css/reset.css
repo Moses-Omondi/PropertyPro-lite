@@ -1,12 +1,4 @@
 /*
-	HTML5 Reset :: style.css
-	----------------------------------------------------------
-	We have learned much from/been inspired by/taken code where offered from:
-
-	Eric Meyer					:: https://meyerweb.com
-	HTML5 Doctor				:: https://html5doctor.com
-	and the HTML5 Boilerplate	:: https://html5boilerplate.com
-
 -------------------------------------------------------------------------------*/
 
 /* Let's default this puppy out
@@ -24,8 +16,6 @@ html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquot
 
 article, aside, figure, footer, header, nav, section, details, summary {display: block;}
 
-/* Handle box-sizing while better addressing child elements:
-   https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
 html {
 	box-sizing: border-box;
 }
@@ -36,23 +26,10 @@ html {
 	box-sizing: inherit;
 }
 
-/* consider resetting the default cursor: https://gist.github.com/murtaugh/5247154 */
-
-/* Responsive images and other embedded objects
-*/
 img,
 object,
 embed {max-width: 100%;}
 
-/*
-   Note: keeping IMG here will cause problems if you're using foreground images as sprites.
-	 In fact, it *will* cause problems with Google Maps' controls at small size.
-	If this is the case for you, try uncommenting the following:
-
-#map img {
-		max-width: none;
-}
-*/
 
 /* force a vertical scrollbar to prevent a jumpy page */
 html {overflow-y: scroll;}
@@ -105,7 +82,7 @@ strong {font-weight: bold;}
 
 td, td img {vertical-align: top;}
 
-/* Make sure sup and sub don't mess with your line-heights https://gist.github.com/413930 */
+
 sub, sup {font-size: 75%; line-height: 0; position: relative;}
 sup {top: -0.5em;}
 sub {bottom: -0.25em;}

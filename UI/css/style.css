@@ -12,7 +12,7 @@ html{
     font-size: 20px;
     font-weight: 300;
     text-rendering: optimizeLegibility;
-    background-image: url('house.jpg');
+    background-image: url('../assets/house.jpg');
     background-size: cover;
 }
 
@@ -91,6 +91,7 @@ h2{
     font-size: 75px;
  }
 
+ .post-logout,
  .post-sold,
  .post-home,
  .post-delete
@@ -102,6 +103,7 @@ h2{
      height: 20px;
  }
 
+ .log-out,
  .sold,
  .home,
  .delete,
@@ -160,4 +162,10 @@ h2{
 .search-prop{
     top: 22%;
     left: -5%;
+}
+
+.post-logout{
+    position: absolute;
+    top: 15%;
+    left: 77%;
 }
