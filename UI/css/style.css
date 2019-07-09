@@ -10,7 +10,8 @@ html{
 }
 /** Definitions **/
 
-.container {
+
+.container{
     margin: 0 auto;
     width: 90%;
     max-width: 1280px;
@@ -18,7 +19,7 @@ html{
 
 .top-depth {
     box-shadow: 0 2px 6px -3px black;
-}
+    }
 
 .bottom-depth{
     box-shadow: 2px 0 4px 0px black;
@@ -78,9 +79,8 @@ html{
 .wrapper ul li.active a{
     color: white;
 }
-.wrapper ul li  a {
+.wrapper ul li  a{
     text-decoration: none;
-
 }
 
 /** Image responsiveness **/
@@ -134,4 +134,40 @@ html{
     display: flex;
     flex-direction: column;
     }
+}
+
+/** login and signup **/
+
+.login-container,
+.signup-container{
+    margin: 0 auto;
+    width: 30%;
+    max-width: 1280px;
+    margin-top: 10%;
+}
+
+input[type=text],
+input[type=password],
+input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 12px 0;
+    display: inline-block;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+button{
+    width: 100%;
+    background-color: purple;
+    padding: 12px 20px;
+    margin: 12px 0;
+}
+
+.signup-container a,
+.login-container a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Roboto Mono', monospace;
 }
