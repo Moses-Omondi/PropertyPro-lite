@@ -5,167 +5,133 @@
 }
 
 html{
-    width: 1140px;
     background-color: #fff;
     font-family: 'Roboto Mono', monospace;
-    color: #555;
-    font-size: 20px;
-    font-weight: 300;
-    text-rendering: optimizeLegibility;
-    background-image: url('../assets/house.jpg');
-    background-size: cover;
+}
+/** Definitions **/
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1280px;
 }
 
-.container{
-    position: absolute;
-    margin: 0 auto 0 auto;
-    margin-left: 30%;
-    margin-right: auto;
-    margin-top: 10%;
+.top-depth {
+    box-shadow: 0 2px 6px -3px black;
 }
 
-h1{
-    position: relative;
-    color: purple;
-    font-stretch: ultra-expanded;
-    margin-left: -20%;
-    font-size: 90px;
-    margin-bottom: 40px;
+.bottom-depth{
+    box-shadow: 2px 0 4px 0px black;
+}
+/*** Backgrounds **/
+.bg-primary {
+    background-color: purple
+}
+.bg-white {
+    background-color: #fff;
+}
+/*** Font Colours **/
+.fg-primary{
+    color: purple
 }
 
-.search-prop,
-#signup{
-    position: absolute;
+/** Utilities **/
+.padding-30{
+    padding: 30px;
+}
+.padding-30-top-bottom{
+    padding:50px 0px 50px 0px;
+}
+.margin-top {
+    margin-top: 50px;
+}
+
+.center-align{
+    text-align: center;
+}
+
+/**** Header **/
+
+.wrapper {
+    width: 100%;
+    height: 100px;
+    padding: 0px;
+}
+
+.wrapper ul .logo{
+    line-height:100px;
     font-size: 30px;
-    margin-left: 42%;
+    text-decoration: none;
 }
+.wrapper ul li {
+    float: right;
+    list-style: none;
+    line-height: 56px;
+    margin-left: 20px;
+    padding:22px;
 
-h2{
-    margin-bottom: 20px;
-    font-display: bold;
-    color: purple;
 }
-
-
-#login{
-    position: absolute;
-    font-size: 25px;
-    margin-top: 60px;
-    margin-left: 31.5%;    
-}
-
-
-#login input[type = "text"], #login input[type = "password"]{
-    background: none;
-    border: 2px solid purple;
-    padding: 3px;
-}
-
-.search-prop input[type = "submit"],
-#login input[type = "submit"]{
-   padding: 4px 22px;
-   color: white;
-   background-color: purple;
-   border-radius: 5px;
-}
-
-.search-prop input[type = "text"],
-.container input[type = "text"], .container input[type = "text"], .container input[type = "password"]{
-    background: none;
-    border: 2px solid purple;
-    padding: 2px;
-    margin: 5px;
-}
-
-.container input[type = "submit"]{
-    margin-top: 2px;
-    padding: 7px;
+.wrapper ul li.active{
+    background: purple;
     color: white;
-    background-color: purple;
- }
+}
+.wrapper ul li.active a{
+    color: white;
+}
+.wrapper ul li  a {
+    text-decoration: none;
 
- .post-header h1{
-    position: absolute;
-    top: 2%;
-    margin-left: 30%;
-    font-size: 75px;
- }
-
- .post-logout,
- .post-sold,
- .post-home,
- .post-delete
- .post-update,
- .post-edit,
- .post-image{
-     position: relative;
-     size: 60px;
-     height: 20px;
- }
-
- .log-out,
- .sold,
- .home,
- .delete,
- .update,
- .edit,
- .upload{
-     color: white;
-     background-color: purple;
-     padding: 5px 20px;
-     font-size: 20px;
- }
- .post-image input[type = file]{
-     font-size: 100px;
-     position: absolute;
-     left: 0;
-     top: 0;
-     opacity: 0;
- }
-
- .post-image{
-     position: absolute;
-     top: 15%;
-     left: 22%;
- }
-
- .post-edit{
-    position: absolute;
-    top: 15%;
-    left: 32%;
 }
 
-.post-home{
-    position: absolute;
-    top: 15%;
-    left: 42%;
-}
+/** Image responsiveness **/
+@media only screen and (max-width: 600px) {
+    .card-image img{
+        width: 300%;
+    }
+  }
 
-.post-update{
-     position: absolute;
-     top: 15%;
-     left: 50.5%;
- }
+  .card-container {
+    width: 300px;
+    background: #fff;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 3px;
+    transition: all .2s;
+  }
+  
+  .card-container:hover {
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  }
+  
+  .card-image img {
+    width: 100%
+  }
+  
+  .card-body {
+    position: relative;
+    padding: 25px 35px;
+    text-align: center;
+    min-height: 105px;
+  }
+  
+  .card-body-heading {
+      font-weight: 400;
+      color: #5f6368;
+      font-size: .95rem;
+      line-height: 25px;
+      padding: 15px 5px;
+  }
 
- .post-delete{
-    position: absolute;
-    top: 15%;
-    left: 61%;
-}
- 
-.post-sold{
-    position: absolute;
-    top: 15%;
-    left: 71%;
-}
+  /*** GRID ***/
+  .flex {
+    display: flex;
+    justify-content: space-evenly;      
+  }
 
-.search-prop{
-    top: 22%;
-    left: -5%;
-}
 
-.post-logout{
-    position: absolute;
-    top: 15%;
-    left: 77%;
+/** Footer Responsiveness **/
+@media only screen and (max-width: 600px) {
+.footer ul{
+    display: flex;
+    flex-direction: column;
+    }
 }
