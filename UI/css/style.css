@@ -9,12 +9,39 @@ html{
     font-family: 'Roboto Mono';
 }
 
+/** Font Neucha **/
+.neuch{
+    font-family: 'Neucha';
+    color: purple;
+    font-size: 200px;
+}
+
 /** Banner img**/
 
-.banner img{
+.banner{
+    background: url("../assets/house9.jpg");
     height: 700px;
     width: 100%;
-    background-image: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner h1{
+    position: absolute;
+    color: orange;
+    font-size: 180px;
+    top: 49%;
+    left: 7%;
+    font-family: 'Neucha';
+}
+
+.banner h3{
+    position: absolute;
+    color: white;
+    top: 67%;
+    left: 13%;
+    font-size: 60px;
 }
 
 /** Definitions **/
@@ -68,7 +95,7 @@ html{
 
 /**** Header **/
 
-h1{
+.about h1{
     margin-top: 40px;
     font-size: 60px;
 }
@@ -251,12 +278,13 @@ button{
 }
 
 .banner-tag h1{
-    background: purple;
     position: absolute;
-    left: 2%;
-    top: 70%;
+    left: 50%;
+    top: 50%;
     color: white;
-    font-size: 120px;
+    font-size: 5rem;
+    font-family: 'permanent marker';
+    opacity: rgba(39, 37, 37, 0.3)
 }
 
 /** Listings **/
