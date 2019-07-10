@@ -9,12 +9,40 @@ html{
     font-family: 'Roboto Mono';
 }
 
+/** Font Neucha **/
+.neuch{
+    font-family: 'Neucha';
+    color: purple;
+    font-size: 200px;
+}
+
 /** Banner img**/
 
-.banner img{
+.banner{
+    background: url("../assets/house9.jpg");
     height: 700px;
     width: 100%;
-    background-image: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner h1{
+    position: absolute;
+    color: orange;
+    font-size: 110px;
+    top: 43%;
+    left: 15.5%;
+    font-family: 'Neucha';
+}
+
+.banner h3{
+    position: absolute;
+    color: white;
+    top: 54%;
+    left: 15.5%;
+    font-size: 23px;
+    font-weight: 400;
 }
 
 /** Definitions **/
@@ -68,16 +96,24 @@ html{
 
 /**** Header **/
 
-h1{
+.about h1{
     margin-top: 40px;
     font-size: 60px;
 }
 
-P, h3{
+h3{
     word-spacing: 2px;
     line-height: 40px;
     font-size: 30px;
     font-family:'permanent marker';
+}
+
+p{
+    word-spacing: 2px;
+    line-height: 40px;
+    font-size: 25px;
+    font-family:'Neucha';
+    font-weight: 200;
 }
 
 h2{
@@ -150,11 +186,15 @@ h2{
   }
   
   .card-body-heading {
-      font-weight: 400;
-      color: #5f6368;
-      font-size: .95rem;
-      line-height: 25px;
-      padding: 15px 5px;
+    font-weight: 400;
+    color: #5f6368;
+    font-size: .95rem;
+    line-height: 25px;
+    padding: 15px 5px;
+  }
+
+  .card-body a{
+    text-decoration: none;
   }
 
 
@@ -240,16 +280,20 @@ button{
 /** Agent-font **/
 
 .agent-font a{
+    color: purple;
+}
+.agent-font a span{
     color: white;
 }
 
 .banner-tag h1{
-    background: purple;
     position: absolute;
-    left: 2%;
-    top: 70%;
+    left: 50%;
+    top: 50%;
     color: white;
-    font-size: 120px;
+    font-size: 5rem;
+    font-family: 'permanent marker';
+    opacity: rgba(39, 37, 37, 0.3)
 }
 
 /** Listings **/
