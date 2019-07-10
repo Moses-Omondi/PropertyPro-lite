@@ -30,8 +30,8 @@ html{
 .banner h1{
     position: absolute;
     color: orange;
-    font-size: 180px;
-    top: 49%;
+    font-size: 120px;
+    top: 43%;
     left: 7%;
     font-family: 'Neucha';
 }
@@ -39,9 +39,10 @@ html{
 .banner h3{
     position: absolute;
     color: white;
-    top: 67%;
-    left: 13%;
-    font-size: 60px;
+    top: 56%;
+    left: 7%;
+    font-size: 30px;
+    font-weight: 400;
 }
 
 /** Definitions **/
@@ -100,11 +101,19 @@ html{
     font-size: 60px;
 }
 
-P, h3{
+h3{
     word-spacing: 2px;
     line-height: 40px;
     font-size: 30px;
     font-family:'permanent marker';
+}
+
+p{
+    word-spacing: 2px;
+    line-height: 40px;
+    font-size: 25px;
+    font-family:'Neucha';
+    font-weight: 200;
 }
 
 h2{
