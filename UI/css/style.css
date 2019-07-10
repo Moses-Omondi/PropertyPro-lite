@@ -30,18 +30,18 @@ html{
 .banner h1{
     position: absolute;
     color: orange;
-    font-size: 120px;
+    font-size: 110px;
     top: 43%;
-    left: 7%;
+    left: 15.5%;
     font-family: 'Neucha';
 }
 
 .banner h3{
     position: absolute;
     color: white;
-    top: 56%;
-    left: 7%;
-    font-size: 30px;
+    top: 54%;
+    left: 15.5%;
+    font-size: 23px;
     font-weight: 400;
 }
 
