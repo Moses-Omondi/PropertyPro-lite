@@ -7,18 +7,20 @@
         <link rel="stylesheet" type="text/css" href="css/reset.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono:300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://fontawesome.com/icons/door-closed?style=solid">
-        <link rel = "stylesheet" href="css/style.css">
+        <link rel = "stylesheet" href="../css/style.css">
     </head>
 
     <body>
-        <form action="#">
-            <label for="uname">username</label>
-            <input type="text" placeholder="Enter username" name="uname">
-            <label for="uname">password</label>
-            <input type="text" placeholder="Enter password" name="psw">
-            <button type="submit"><a href="agent.html">login</a></button>
-            <button type="submit"><a href="../index.html">logout</a></button>
-        </form>
+        <div class="login-container fg-primary login">
+            <form action="#">
+                <label for="uname">username</label>
+                <input type="text" placeholder="Enter username" name="uname">
+                <label for="uname">password</label>
+                <input type="password" placeholder="Enter password" name="psw">
+                <button type="submit"><a href="agent.html">login</a></button>
+                <button type="submit"><a href="signup.html">Don't have an account? signup</a></button>
+            </form>
+        </div>
     </body>
 
 </html>
