@@ -244,6 +244,9 @@ button{
 /** Agent-font **/
 
 .agent-font a{
+    color: purple;
+}
+.agent-font a span{
     color: white;
 }
 
