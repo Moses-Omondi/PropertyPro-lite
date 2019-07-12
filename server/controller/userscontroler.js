@@ -13,34 +13,22 @@
 /* eslint-disable no-shadow */
 /* eslint-disable one-var */
 /* eslint-disable linebreak-style */
-import users from "../models/users";
-export const getAllUsers = (req, res) => res.send(users);
+import users from "../model/usersmodel";
+export const getAllUsers = (req, res) => res.json(users);
 
 export const getUserById = (req, res) => {
 
     const user = users.find((users) => users.id == req.params.id);
 
-    return res.send(user);
+    return res.json(user);
 
 };
 
 export const createUser = (req, res) => {
-
-    const newUser = {
-        email,
-        first_name,
-        last_name,
-        password,
-        phoneNumber,
-        address,
-        is_admin
-    };
-
-    newUser = body.req
-
+    const { body } = req;
+    users.push[body];
     return res.status(201).json({
-        "status": "success",
-        "data": body
+      status: "success",
+      data: body,
     });
-
-};
+  };

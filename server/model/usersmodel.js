@@ -1,5 +1,6 @@
-export const users = [
+const newUsers = [
   {
+    Id: 2,
     email: 'tarrus@gmail.com',
     firstName: 'Taurus',
     lastName: 'Juro',
@@ -10,6 +11,7 @@ export const users = [
   },
 
   {
+    Id: 4,
     email: 'virgo@gmail.com',
     firstName: 'Virgo',
     lastName: 'Keno',
@@ -20,3 +22,5 @@ export const users = [
   },
 
 ];
+
+export default newUsers;

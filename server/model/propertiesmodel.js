@@ -1,40 +1,42 @@
-export const property = [
+const properties = [
   {
-    id: 1,
+    Id: 1,
     owner: 'Micheal Carrick',
     status: 'status',
     price: '340000',
     state: 'Kigali',
     city: 'Kigali',
     address: 'Homeland',
-    type: 'sell',
+    type: '1 bedroom',
     created_on: '2-12-2019',
     image_url: 'image.jpg',
   },
 
   {
-    id: 2,
+    Id: 2,
     owner: 'Julius Duek',
     status: 'status',
     price: '340000',
     state: 'France',
     city: 'Paris',
     address: 'Jupiter',
-    type: 'sell',
+    type: '2 bedroom',
     created_on: '2-8-2019',
     image_url: 'image.jpg',
   },
 
   {
-    id: 3,
+    Id: 3,
     owner: 'David Crack',
     status: 'status',
     price: '340000',
     state: 'Germany',
     city: 'Westend',
     address: 'Koln',
-    type: 'sell',
+    type: 'single',
     created_on: '1-12-2019',
     image_url: 'image.jpg',
   },
 ];
+
+export default properties;

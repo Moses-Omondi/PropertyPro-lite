@@ -4,18 +4,19 @@
 /* eslint-disable sort-imports */
 /* eslint-disable linebreak-style */
 import express from 'express';
-import { createUser, getAllUsers, getUserById } from '../controllers/userControl';
-import { createProperty, getAllProperties, getPropertyById, getPropertyByType } from '../controllers/propertyControl';
+import { createUser, getAllUsers, getUserById } from '../controller/userscontroler';
+import { createProperty, getAllProperties, getPropertyById, getPropertyBytype } from '../controller/propertiescontroller';
 const router = express.Router();
 
+
 router.get('/users', getAllUsers);
-router.get('/users/:id', getUserById);
+router.get('/users/:Id', getUserById);
 router.post('/user', createUser);
 
 router.get('/properties', getAllProperties);
-router.get('/properties/:id', getPropertyById);
-router.get('/properties/type/:type', getPropertyByType);
-router.post('/proprties', createProperty);
+router.get('/properties/:Id', getPropertyById);
+router.get('/properties/type/:type', getPropertyBytype);
+router.post('/properties', createProperty);
 
 
 export default router;
