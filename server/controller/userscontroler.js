@@ -1,86 +1,59 @@
-/* eslint-disable space-before-function-paren */
-/* eslint-disable max-len */
-/* eslint-disable no-undef */
-/* eslint-disable prefer-const */
 /* eslint-disable no-unused-vars */
-/* eslint-disable max-statements */
-/* eslint-disable sort-vars */
-/* eslint-disable no-negated-condition */
-/* eslint-disable require-await */
+/* eslint-disable no-sync */
+/* eslint-disable handle-callback-err */
+/* eslint-disable linebreak-style */
+/* eslint-disable no-empty-function */
+/* eslint-disable sort-keys */
+/* eslint-disable no-magic-numbers */
+/* eslint-disable no-unused-expressions */
+/* eslint-disable linebreak-style */
+/* eslint-disable eqeqeq */
+/* eslint-disable no-shadow */
 /* eslint-disable one-var */
-/* eslint-disable no-mixed-requires */
-const dotenv = require('dotenv');
-const Joi = require('@hapi/joi');
-const { schema, options } = require('../helpers/validator');
-const { User } = require('../models/user');
-const { encodeToken } = require('../helpers/jwt');
-const { hashPassword, compareHash } = require('../helpers/utils');
-const { Response } = require('../helpers/utils'),
- userResponse = new Response();
-dotenv.config();
-const userController = {
+/* eslint-disable linebreak-style */
+import users from '../models/users';
+import bcrypt from 'bcrypt';
+import jwt from 'jsonwebtoken';
+import response from '../helpers/responses';
 
-    async signUp(req, res) {
+export const getAllUsers = (req, res) => res.send(users);
 
-        let { firstname, lastname, email, password, isAgent } = req.body,
-         user = User.getUserByEmail(email);
-        if (!user) {
-            Joi.validate(req.body, schema.user, options).then((result) => {
-                const hashedPassword = hashPassword(password);
-                const user1 = new User(firstname, lastname, email, hashedPassword, isAgent);
+export const getUserById = (req, res) => {
 
-                user1.save();
-                const token = encodeToken(user1),
-                 data = {
+    const user = users.find((users) => users.id == req.params.id);
 
-                    id: user1.id,
-                    firstname: user1.firstname,
-                    lastname: user1.lastname,
-                    email: user1.email,
-                    isAgent: user1.isAgent,
-                    token
+    return res.send(user);
 
-                };
-                userResponse.setSuccess(201, 'success', 'User registered successfully', data);
-                return userResponse.send(res);
-            }).
-catch((error) => {
-                userResponse.setError(400, 'failed', error.message);
-                return userResponse.send(res);
-
-            });
-        } else {
-            userResponse.setError(409, 'failed', `user with ${email} already exists please login`);
-            return userResponse.send(res);
-        }
-    },
-
-    async login (req, res) {
-        const { email, password } = req.body;
-        if (!email || !password) {
-            userResponse.setError(400, 'failed', 'All fields are required');
-            return userResponse.send(res);
-        }
-        const user = User.getUserByEmail(email);
-        if (user) {
-            if (compareHash(password, user.password)) {
-                const token = encodeToken(user);
-                userResponse.setSuccess(200, 'success', 'logged in successfully', token);
-                return userResponse.send(res);
-
-            }
-
-                userResponse.setError(401, 'failed', 'Invalid user login credentials');
-                return userResponse.send(res);
-
-        }
-
-            userResponse.setError(400, 'failed', 'user does not exist');
-            return userResponse.send(res);
-
-
-    }
 };
 
+export const createUser = (req, res) => {
 
-module.exports = userController;
+   const { email, first_name, last_name, address, phoneNumber, password, is_admin } = req.body;
+
+    const newUser = {
+        id: users.length + 1,
+        email,
+        first_name,
+        last_name,
+        password: bcrypt.hashSync(password, 10),
+        phoneNumber,
+        address,
+        is_admin
+    };
+
+    users.push[newUser];
+
+    jwt.sign(newUser, 'DanielAndela', { expiresIn: 3600 }, (err, token) => {
+
+        const payload = {
+            token,
+            newUser,
+        };
+    return res.status(201).json({
+        'status': 'success',
+        'data': {
+            payload
+        }
+    });
+    });
+};
