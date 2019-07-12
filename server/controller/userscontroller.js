@@ -1,9 +1,6 @@
-/* eslint-disable quotes */
-// eslint-disable-next-line import/prefer-default-export
-/* eslint-disable import/prefer-default-export */
 /* eslint-disable no-unused-expressions */
-
-import users from '../../model/usersmodel';
+/* eslint-disable quotes */
+import users from '../model/usersmodel';
 
 // create user controller
 
