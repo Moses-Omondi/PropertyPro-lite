@@ -1,16 +1,15 @@
-/* eslint-disable max-params */
-class Responses {
-    static response (res, statusCode, data, error = false) {
-      if (error) {
-        return res.status(statusCode).json({
-          status: statusCode,
-          error: data
-        });
-      }
-      return res.status(statusCode).json({
-        status: statusCode,
-        data
-      });
-    }
+/* eslint-disable semi */
+/* eslint-disable object-shorthand */
+const response = (res, status, data, error = false) => {
+  if (error) {
+    return res.status(status).json({
+      status: status,
+      error: data
+    });
   }
-  export default Responses;
+  return res.status(status).json({
+    status: status,
+    data
+  });
+}
+export default response;
