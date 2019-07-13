@@ -154,13 +154,6 @@ h2{
 }
 
 
-/** Image responsiveness **/
-@media only screen and (max-width: 600px) {
-    .card-image img{
-        width: 300%;
-    }
-  }
-
 /** Card design **/
   .card-container {
     width: 300px;
@@ -203,15 +196,6 @@ h2{
     display: flex;
     justify-content: space-evenly;      
   }
-
-
-/** Footer Responsiveness **/
-@media only screen and (max-width: 600px) {
-.footer ul{
-    display: flex;
-    flex-direction: column;
-    }
-}
 
 
 /** login and signup **/
