@@ -319,3 +319,10 @@ button{
 .footer p{
     font-size: 16px;
 }
+
+/** Icons **/
+.card-body i{
+    color: black;
+    font-size: 23px;
+    padding: 12px;
+}
