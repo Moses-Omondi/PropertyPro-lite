@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable max-len */
 /* eslint-disable consistent-return */
 /* eslint-disable eqeqeq */
@@ -65,20 +66,23 @@ export const createProperty = (req, res) => {
 
 };
 
-export const deleteProperty = (req, res) => {
-    const { id } = req.body,
 
-    const index = properties.findIndex((properties) => properties.id == req.params.id);
+export const deletePropertyById = (req, res) => {
 
-    if(index !== -1){
+    const { id } = req.body;
+
+    const index = properties.find((properties) => properties.id == req.params.id);
+
+    if (index !== -1) {
         properties.splice(index, 1);
         return res.status(200).json({
             status: 'ok',
             data: 'property deleted'
-        })
+        });
     }
     res.status(404).json({
         status: 'error',
         data: 'no property not found'
-    })
+    });
 };
+

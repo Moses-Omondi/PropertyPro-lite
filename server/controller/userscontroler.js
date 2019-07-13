@@ -15,7 +15,6 @@
 import users from '../model/usersmodel';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
-import response from '../helpers/responses';
 
 export const getAllUsers = (req, res) => res.send(users);
 
