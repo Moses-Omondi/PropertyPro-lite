@@ -288,3 +288,9 @@ button{
     font-family: 'Roboto mono';
     font-size: 17px;
 }
+
+/** footer **/
+
+.footer p{
+    font-size: 16px;
+}
