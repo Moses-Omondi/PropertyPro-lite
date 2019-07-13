@@ -153,6 +153,18 @@ h2{
     text-decoration: none;
 }
 
+.form-headings{
+    position: absolute;
+    font-size: 60px;
+    top: 24%;
+    margin-left: 45%;
+    color: purple;
+    font-family: 'Neucha';
+
+}
+
+
+
 
 /** Card design **/
   .card-container {
@@ -187,7 +199,11 @@ h2{
   }
 
   .card-body-heading-link{
-      margin-left: 50%;
+      margin-left: 40%;
+  }
+
+  .card-body-heading-back-link{
+     margin-right: 60%;
   }
 
   .card-body a{
