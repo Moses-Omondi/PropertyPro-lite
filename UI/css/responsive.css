@@ -4,7 +4,7 @@
 @media only screen and (max-width: 700px) {
 
     .container{ display: flex; flex-direction: column; justify-content: center;}
-    .card-container{ width: 100%; margin-bottom: 40px; }
+    .card-container{ width: 100%; margin-bottom: 40px; color: red; }
     .banner{ width: 100%}
     .banner h1{ font-size: 60px;}
     .banner h3{ font-size: 16px; font-weight: 200;}
