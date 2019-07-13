@@ -1,7 +1,7 @@
 /*** CSS FOR WEB RESPONSIVENESS **/
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 700px) {
 
     .container{ display: flex; flex-direction: column; justify-content: center;}
     .card-container{ width: 100%; margin-bottom: 40px; }
@@ -11,16 +11,10 @@
     .login-form { width: 90%;}
     .signup-form{ width: 90%;}
     .createadvert-form{ width: 90%;}
-    
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 800px) {
-  .container{ display: flex; flex-direction: column; justify-content: center;}
-  .card-container{ width: 70%; margin-bottom: 40px; }
-  .banner{ width: 100%}
-  .banner h1{ font-size: 60px;}
-  .banner h3{ font-size: 25px; font-weight: 200;}
-  .login-container{ size: 5%; height: 20px;}
-  .login-form { width: 90%;}
-  .signup-form{ width: 90%};
+    .listings-form h2{ width: 70%;}
+    .listings-form li{ width: 120%; }
+    .advert-page { float: right;
+      display: block;
+    height:fit-content;}
 }
+/* Small devices (portrait tablets and large phones, 600px and up) */
