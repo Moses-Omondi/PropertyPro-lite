@@ -6,7 +6,6 @@
 /* eslint-disable no-shadow */
 /* eslint-disable one-var */
 import properties from '../model/propertiesmodel';
-import responses from '../helpers/responses';
 
 export const getAllProperties = (req, res) => {
     if (properties.length == 0) {
